@@ -28,6 +28,8 @@ const sortBy = (method) => {
       rows.sort((a, b) =>
         a.children[index].textContent.localeCompare(
           b.children[index].textContent,
+          undefined,
+          { sensitivity: 'base' },
           // eslint-disable-next-line prettier/prettier
         ),
       );
@@ -39,6 +41,8 @@ const sortBy = (method) => {
       rows.sort((a, b) =>
         a.children[index].textContent.localeCompare(
           b.children[index].textContent,
+          undefined,
+          { sensitivity: 'base' },
           // eslint-disable-next-line prettier/prettier
         ),
       );
